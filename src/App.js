@@ -1,10 +1,11 @@
-
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Landing from './components/landingPage/Landing';
+import './css/App.css';
 
 function App() {
   return (
     <>
-      <h1>Hola Mundo!</h1>
+      <Landing />
     </>
   );
 }
