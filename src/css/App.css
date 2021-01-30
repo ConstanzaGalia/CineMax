@@ -1,10 +1,37 @@
-/* ESTILOS CSS LANDING PAGE */
-body{
+/* ESTILOS LANDING PAGE */
+.bgPortada{
+    background-image: url('../img/imgPortadaLanding.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.bgPortada::before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.bgPortada h3{
+    max-height: 45vh;
+    font-size: 2rem;
+	color: #fff;
+	position: relative
+}
+.bgSection1Landing{
     background-image: url(https://k43.kn3.net/052D729AC.jpg);
     background-size: cover;
     background-repeat: repeat;
 }
 .hrLanding {
-    border-width: 0.8rem ;
+    border-width: 0.5rem ;
     border-color: gray;
+}
+
+/* ESTILOS FOOTER */
+.backgrFooter{
+    background-color: rgba(9, 108, 201, 0.836);
+    height: 120px;
+    
 }
