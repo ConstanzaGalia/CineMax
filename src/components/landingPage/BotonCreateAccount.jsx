@@ -1,7 +1,7 @@
 import { Form, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import {getStorageUsers, setStorage} from '../utils';
+import {getStorageArray, setStorage} from '../utils';
 
 export default function BotonCreateAccount() {
     const [show, setShow] = useState(false);
@@ -12,7 +12,7 @@ export default function BotonCreateAccount() {
     const [input, setInput] = useState({nombreApellido: '', email:'', password:''});
     const handleSubmit = (e) =>{
         e.preventDefault();
-        const users = getStorageUsers('users');
+        const users = getStorageArray('users');
         const updateUsers =[...users, input];
         setStorage('users', updateUsers);
     }
