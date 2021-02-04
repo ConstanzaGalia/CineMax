@@ -1,7 +1,7 @@
 import { Form, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import {getStorageArray, setStorage} from '../utils';
+import {getStorageArray, setStorage} from './utils';
 
 export default function BotonCreateAccount() {
     const [show, setShow] = useState(false);

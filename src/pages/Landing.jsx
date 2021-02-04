@@ -1,6 +1,6 @@
-import Footer from "../Footer";
-import BotonCreateAccount from "./BotonCreateAccount";
-import BotonInicioSesion from "./BotonInicioSesion";
+import Footer from "../components/Footer";
+import BotonCreateAccount from "../components/BotonCreateAccount";
+import BotonInicioSesion from "../components/BotonInicioSesion";
 
 
 
@@ -29,7 +29,7 @@ export default function Landing(props) {
                         </div>
                     </div>
             </section>
-            <section className="container-fluid bgSection1Landing">
+            <section className="bgSection1Landing">
                 <div className="container">
                     <div className="row py-5">
                         <div className="col-6 my-auto text-center">
@@ -56,7 +56,7 @@ export default function Landing(props) {
                 </div>
                     
                     <hr className="hrLanding"/>
-            <div className="container-fluid py-5">
+            <div className="container-fluid pt-5">
                 <Footer />
             </div>
             </section>
