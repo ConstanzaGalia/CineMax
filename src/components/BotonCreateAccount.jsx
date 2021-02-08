@@ -1,7 +1,8 @@
-import { Form, Modal } from "react-bootstrap";
+import { Form, Modal, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import {getStorageArray, setStorage} from './utils';
+import {getStorageArray, setStorage} from '../utils';
+
 
 export default function BotonCreateAccount() {
     const [show, setShow] = useState(false);
@@ -9,12 +10,21 @@ export default function BotonCreateAccount() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const [showAlert, setShowAlert] = useState(false);
+    
+
     const [input, setInput] = useState({nombreApellido: '', email:'', password:''});
     const handleSubmit = (e) =>{
         e.preventDefault();
         const users = getStorageArray('users');
         const updateUsers =[...users, input];
         setStorage('users', updateUsers);
+        setShowAlert(true);
+        e.target.reset();
+        setTimeout(function () {
+            handleClose();
+            setShowAlert(false);
+        }, 1000);
     }
     const handleChange = (e) => {
         const value = e.target.value;
@@ -33,6 +43,7 @@ export default function BotonCreateAccount() {
                 </Modal.Header>
                 <Modal.Body>
                     <Form onSubmit={handleSubmit}>
+                            {showAlert && <Alert variant={'success'}>¡Su registro se realizó con éxito! 🤩</Alert>}
                         <Form.Group>
                             <Form.Label>Nombre y Apellido</Form.Label>
                             <Form.Control name="nombreApellido" type="text" placeholder="Ingrese su nombre y apellido" onChange={handleChange} />

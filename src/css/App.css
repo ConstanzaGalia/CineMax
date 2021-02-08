@@ -29,6 +29,10 @@
     border-color: gray;
 }
 
+.logoStyle{
+    width: 200px;
+}
+
 /* ESTILOS FOOTER */
 .backgrFooter{
     background-color: rgba(9, 108, 201, 0.836);

@@ -7,6 +7,8 @@ export default function BotonInicioSesion() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const [input, setInput] = useState({ email: '', password: '' })
+
     return (
         <div>
             <Button variant="secondary" className="mt-5 float-right" onClick={handleShow}>Iniciar Sesión</Button>

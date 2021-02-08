@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import BotonCreateAccount from "../components/BotonCreateAccount";
 import BotonInicioSesion from "../components/BotonInicioSesion";
+import Logo from "../components/Logo";
 
 
 
@@ -11,7 +12,7 @@ export default function Landing(props) {
                     <div className="container">
                         <div className="row py-5">
                             <div className="col-6 mt-5">
-                                <h1>Logo</h1>
+                                <Logo />
                             </div>
                             <div className="col-6">
                                 <BotonInicioSesion />
