@@ -12,6 +12,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Footer from './components/Footer';
 
 
 
@@ -20,14 +21,18 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path='/peliculas'>
-            <Peliculas />
-          </Route>
-          <Route path='/series'>
-            <Series />
-          </Route>
           <Route path='/user'>
-            <User />
+            <Switch>
+            <Route path='/peliculas'>
+              <Peliculas />
+            </Route>
+            <Route path='/series'>
+              <Series />
+            </Route>
+            <Route path='/'>
+              <User />
+            </Route>
+            </Switch>
           </Route>
           <Route path='/admin'>
             <Admin />
@@ -36,10 +41,10 @@ function App() {
             <Landing img1={img1} img2={img2} />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-
     </>
-  ); 
+  );
 }
 
 export default App;

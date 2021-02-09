@@ -1,15 +1,15 @@
 import Carrousel from "../components/Carrousel";
 import Footer from "../components/Footer";
+import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
 
-
-export default function User(props) {
+export default function User() {
     return (
-        <>
+        <div className="bgSection1Landing text-white">
             <div className="container">
-                <div className="row mt-5">
+                <div className="row">
                     <div className="col-lg-6">
-                        <img src={props.logo} alt="" />
+                        <Logo />
                     </div>
                     <div className="col-lg-6">
                     {/* BOTON NOMBRE DEL USUARIO LOGUEADO CON DROPDOWN PARA LOGOUT */}
@@ -32,9 +32,6 @@ export default function User(props) {
                 </div>
                 <hr className="mt-5 hrLanding" />
             </div>
-            <div className="mt-5">
-                <Footer />
-            </div>
-        </>
+        </div>
     )
 }

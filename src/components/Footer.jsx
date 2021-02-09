@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <>
+        <div className="bgSection1Landing">
         <div className="row">
             <div className="col-lg-4">
                 <a className="row justify-content-center" href="/">Preguntas Frecuentes</a>
@@ -22,6 +22,6 @@ export default function Footer() {
             Copyright © CineMax 2021 - Todos los derechos reservados.
             </p>
         </div>
-        </>
+        </div>
     )
 }

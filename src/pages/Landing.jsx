@@ -57,9 +57,6 @@ export default function Landing(props) {
                 </div>
                     
                     <hr className="hrLanding"/>
-            <div className="container-fluid pt-5">
-                <Footer />
-            </div>
             </section>
         </main>
     )

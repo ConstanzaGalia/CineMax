@@ -14,13 +14,12 @@
 	background-color: rgba(0,0,0,0.6);
 }
 .bgPortada h3{
-    max-height: 45vh;
     font-size: 2rem;
 	color: #fff;
 	position: relative
 }
 .bgSection1Landing{
-    background-image: url(https://k43.kn3.net/052D729AC.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp3235168.jpg);
     background-size: cover;
     background-repeat: repeat;
 }
@@ -38,4 +37,12 @@
     background-color: rgba(9, 108, 201, 0.836);
     height: 80px;
     
+}
+
+/* ESTILOS NAVBAR USER*/
+.fontNavbar {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: white !important;
+    margin-right: 2rem;
 }
